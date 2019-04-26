@@ -44,12 +44,12 @@ jobs:
       - checkout
       - run: yarn install
       - run: npx semantic-release
+
 workflows:
   version: 2
   test_and_release:
     jobs:
       - test_build
       - release:
-        - requires:
-          - test_build
-          
+          requires:
+            - test_build
