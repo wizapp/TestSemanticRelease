@@ -5,7 +5,14 @@
   "license": "MIT",
   "scripts": {
     "semantic-release": "semantic-release",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "cz": "git-cz",
+    "semantic-release": "semantic-release"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "repository": {
     "type": "git",
@@ -16,6 +23,7 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
+    "cz-conventional-changelog": "^2.1.0",
     "jest": "^24.7.1",
     "semantic-release": "^15.13.3",
     "ts-jest": "^24.0.2"
@@ -25,5 +33,10 @@
   },
   "dependencies": {
     "typescript": "^3.4.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
