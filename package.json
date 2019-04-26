@@ -15,5 +15,8 @@
   },
   "devDependencies": {
     "semantic-release": "^15.13.3"
+  },
+  "engines": {
+    "node": ">=8.3"
   }
 }
