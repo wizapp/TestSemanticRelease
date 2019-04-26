@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "semantic-release": "semantic-release",
+    "semantic-release": "semantic-release pre && semantic-release post",
     "test": "jest --coverage",
     "cz": "git-cz"
   },
@@ -12,6 +12,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "release": {
+    "getLastRelease": "last-release-git"
   },
   "repository": {
     "type": "git",
