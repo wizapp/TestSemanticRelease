@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "semantic-release": "semantic-release",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "cz": "git-cz"
   },
   "repository": {
     "type": "git",
