@@ -6,8 +6,7 @@
   "scripts": {
     "semantic-release": "semantic-release",
     "test": "jest --coverage",
-    "cz": "git-cz",
-    "semantic-release": "semantic-release"
+    "cz": "git-cz"
   },
   "config": {
     "commitizen": {
@@ -22,6 +21,7 @@
     "access": "restricted"
   },
   "devDependencies": {
+    "@types/chalk": "^2.2.0",
     "@types/jest": "^24.0.11",
     "cz-conventional-changelog": "^2.1.0",
     "jest": "^24.7.1",
@@ -32,11 +32,7 @@
     "node": ">=8.3"
   },
   "dependencies": {
+    "chalk": "^2.4.2",
     "typescript": "^3.4.5"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
