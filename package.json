@@ -6,7 +6,13 @@
   "scripts": {
     "semantic-release": "semantic-release",
     "test": "jest --coverage",
-    "cz": "git-cz"
+    "cz": "git-cz",
+    "semantic-release": "semantic-release"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "repository": {
     "type": "git",
