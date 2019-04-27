@@ -5,3 +5,5 @@
 Add semantic release configuration in package.json
 
 New modification forPR
+
+Try to fix no changelog generated issue #7
