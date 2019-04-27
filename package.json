@@ -19,17 +19,17 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       [
-        "@semantic-release/npm",
-        {
-          "npmPublish": false,
-          "tarballDir": "distnpm"
-        }
-      ],
-      [
         "@semantic-release/changelog",
         {
           "changelogFile": "CHANGELOG.md",
           "changelogTitle2": "Semantic Release Test App changelog"
+        }
+      ],
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false,
+          "tarballDir": "distnpm"
         }
       ],
       "@semantic-release/github"
