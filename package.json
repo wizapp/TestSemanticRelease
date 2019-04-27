@@ -4,13 +4,27 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "semantic-release": "semantic-release pre && semantic-release post",
+    "semantic-release": "semantic-release",
     "test": "jest --coverage",
     "cz": "git-cz"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    },
+    "semantic-release": {
+      "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        [
+          "@semantic-release/npm",
+          {
+            "npmPublish": false,
+            "tarballDir": "distnpm"
+          }
+        ],
+        "@semantic-release/github"
+      ]
     }
   },
   "release": {
