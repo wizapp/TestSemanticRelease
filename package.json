@@ -11,24 +11,22 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    },
-    "semantic-release": {
-      "plugins": [
-        "@semantic-release/commit-analyzer",
-        "@semantic-release/release-notes-generator",
-        [
-          "@semantic-release/npm",
-          {
-            "npmPublish": false,
-            "tarballDir": "distnpm"
-          }
-        ],
-        "@semantic-release/github"
-      ]
     }
   },
   "release": {
-    "getLastRelease": "last-release-git"
+    "getLastRelease": "last-release-git",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false,
+          "tarballDir": "distnpm"
+        }
+      ],
+      "@semantic-release/github"
+    ]
   },
   "repository": {
     "type": "git",
